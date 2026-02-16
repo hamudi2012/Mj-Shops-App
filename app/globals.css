@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* KONFIGURASI TEMA ASLI MJ-SHOPS */
+:root { 
+  --primary: #4caf50; --bg: #f4fff4; --text: #1f3d1f; --card: #ffffff; --header-bg: #8fd694; 
+}
+
+.mode-dark { 
+  --bg: #121212; --text: #e0e0e0; --card: #1f1f1f; --primary: #45a049; --header-bg: #1e1e1e; 
+}
+
+.mode-blue { 
+  --bg: #e3f2fd; --text: #0d47a1; --card: #ffffff; --primary: #2196f3; --header-bg: #bbdefb; 
+}
+
+.mode-gold { 
+  --bg: #fdfaf1; --text: #403d39; --card: #ffffff; --primary: #d4a373; --header-bg: #faedcd; 
+}
+
+.mode-pink { 
+  --bg: #fdf2f8; --text: #831843; --card: #ffffff; --primary: #ec4899; --header-bg: #fbcfe8; 
+}
+
+/* TERAPKAN VARIABEL KE BODY */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+  font-family: 'sans-serif';
+}
+
+/* CUSTOM CLASSES SUPAYA TAILWIND BISA PAKE VARIABLE DI ATAS */
+.bg-custom-primary { background-color: var(--primary); }
+.bg-custom-header { background-color: var(--header-bg); }
+.bg-custom-card { background-color: var(--card); }
+.text-custom-primary { color: var(--primary); }
+.border-custom-primary { border-color: var(--primary); }
+  
